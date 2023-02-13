@@ -8,12 +8,12 @@ class Body extends Component {
     VOffSet: 20,
     Blur: 10,
     Spread: 10,
-    Opacity: 100,
+    Opacity: 1,
     Color: "#000000",
     Inset: false,
   };
 
-  handleCssCode = ({ target }) => {
+  handleCssProps = ({ target }) => {
     const { name, value } = target;
     const { state } = this;
 
@@ -27,7 +27,7 @@ class Body extends Component {
 
     return (
       <div className="main-body">
-        <Controls onChange={this.handleCssCode} code={state} />
+        <Controls onChange={this.handleCssProps} code={state} />
         <Output code={state} />
       </div>
     );

@@ -1,10 +1,8 @@
 import React from "react";
 
-const OutputCode = ({ code }) => {
-  const cssStyle = `${code?.HOffSet}px ${code?.VOffSet}px ${code?.Blur}px ${code?.Spread}px ${code?.Color} `;
-
-  let OutPut = `box-shadow: ${cssStyle}; \n-webkit-box-shadow: ${cssStyle}; \n-moz-box-shadow: ${cssStyle};
-  `;
+const OutputCode = ({ cssCode }) => {
+  let cssStyle = cssCode();
+  let OutPut = `box-shadow: ${cssStyle}; \n-webkit-box-shadow: ${cssStyle}; \n-moz-box-shadow: ${cssStyle};`;
 
   const handleCopy = () => {
     navigator.clipboard.writeText(OutPut);

@@ -51,7 +51,9 @@ const Controls = ({ code, onChange }) => {
             name={"Opacity"}
             value={code}
             onChange={onChange}
-            max={100}
+            max={1}
+            min={0}
+            steps={0.01}
           />
         </div>
       </div>
