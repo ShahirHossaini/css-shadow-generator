@@ -1,6 +1,6 @@
 import React from "react";
 
-import profilePhoto from "./../images/profile-pic.png";
+import profilePhoto from "./../images/shahirdev.png";
 
 const Header = () => {
   return (
@@ -11,7 +11,7 @@ const Header = () => {
       <aside className="profile">
         <div className="profile-container">
           <div className="profile-photo">
-            <img src={profilePhoto} alt="shahir dev profile photo" />
+            <img src={profilePhoto} alt="shahir dev profile" />
           </div>
           <div className="profile-name-username">
             <p>Shahir Hussaini</p>
