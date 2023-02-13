@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className="main-header">
       <aside className="title">
-        <h1>shadow-box CSS Generator</h1>
+        <h1>box-shadow CSS Generator</h1>
       </aside>
       <aside className="profile">
         <div className="profile-container">

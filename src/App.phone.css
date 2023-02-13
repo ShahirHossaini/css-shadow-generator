@@ -3,8 +3,18 @@
     min-width: 100px;
   }
 
+  .main-header {
+    height: 100px;
+  }
+
   .title h1 {
     font-size: 10px;
+
+    padding: 10px;
+
+    text-align: center;
+
+    border-radius: 15px;
   }
 
   .profile-name-username {
