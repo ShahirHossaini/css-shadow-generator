@@ -6,8 +6,8 @@ class Body extends Component {
   state = {
     HOffSet: 10,
     VOffSet: 20,
-    Blur: 30,
-    Spread: 15,
+    Blur: 10,
+    Spread: 10,
     Opacity: 100,
     Color: "#000000",
     Inset: false,

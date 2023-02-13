@@ -31,21 +31,20 @@ const Controls = ({ code, onChange }) => {
             name={"Blur"}
             value={code}
             onChange={onChange}
-            max={100}
+            max={200}
           />
           <RangeInput
             label={"Spread"}
             name={"Spread"}
             value={code}
             onChange={onChange}
-            max={100}
+            max={200}
           />
           <ColorInput
             label={"Color"}
             name={"Color"}
             value={code}
             onChange={onChange}
-            max={100}
           />
           <RangeInput
             label={"Opacity"}

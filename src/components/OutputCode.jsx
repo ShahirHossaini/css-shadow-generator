@@ -7,7 +7,6 @@ const OutputCode = ({ code }) => {
   `;
 
   const handleCopy = () => {
-    // Copy the text inside the text field
     navigator.clipboard.writeText(OutPut);
   };
 

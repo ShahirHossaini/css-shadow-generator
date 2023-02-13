@@ -1,0 +1,38 @@
+@media (max-width: 480px) {
+  .main-container {
+    min-width: 100px;
+  }
+
+  .title h1 {
+    font-size: 10px;
+  }
+
+  .profile-name-username {
+    display: none;
+  }
+
+  .profile-container {
+    flex-direction: row-reverse;
+  }
+
+  .main-body {
+    flex-wrap: wrap;
+  }
+
+  .main-body aside {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-frame {
+    border-radius: 0px;
+  }
+
+  .main-frame {
+    height: auto;
+  }
+
+  .main-frame-output {
+    height: 500px;
+  }
+}

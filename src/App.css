@@ -168,10 +168,16 @@ body {
   height: 40px;
 
   border-radius: 20px;
+
+  position: relative;
 }
 
 .color-input .color input {
-  display: none;
+  border: none;
+
+  background: none;
+
+  width: 100px;
 }
 
 .range-input .range input {
