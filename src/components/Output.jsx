@@ -1,8 +1,8 @@
 import React from "react";
+import OutputBox from "./OutputBox";
+import OutputCode from "./OutputCode";
 
-const Output = ({ code }) => {
-  const cssStyle = `${code?.HOffSet}px ${code?.VOffSet}px ${code?.Blur}px ${code?.Spread}px ${code?.Color} `;
-
+const Output = (props) => {
   return (
     <aside className="output">
       <div className="main-frame">
@@ -10,10 +10,8 @@ const Output = ({ code }) => {
           <p>Output</p>
         </div>
         <div className="main-frame-output">
-          <div className="box-container">
-            <div className="box" style={{ boxShadow: cssStyle }}></div>
-          </div>
-          <div className="code-container"></div>
+          <OutputBox {...props} />
+          <OutputCode {...props} />
         </div>
       </div>
     </aside>

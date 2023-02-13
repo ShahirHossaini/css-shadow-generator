@@ -236,18 +236,18 @@ body {
 
 .main-frame-output {
   height: 100%;
+
+  background: var(--white);
+
+  overflow: hidden;
 }
 
 .box-container {
   height: 50%;
   width: 100%;
 
-  background: var(--white);
-
   display: grid;
   place-items: center;
-
-  overflow: hidden;
 }
 
 .box-container .box {
@@ -257,4 +257,64 @@ body {
   background: var(--primary-color);
 
   border-radius: 10px;
+}
+
+.code-container {
+  height: 240px;
+
+  display: grid;
+  place-items: center;
+}
+
+.code-container .code {
+  width: 80%;
+  height: 150px;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+
+  position: relative;
+}
+
+.code-container .code textarea {
+  height: 150px;
+  width: 100%;
+
+  outline: none;
+
+  border: none;
+
+  background: var(--black);
+
+  color: var(--white);
+
+  font-size: 20px;
+
+  padding: 20px;
+}
+
+.code-container .code button {
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+
+  margin: 15px;
+
+  outline: none;
+
+  background: var(--primary-color);
+
+  font-size: 14px;
+
+  padding: 5px 20px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.code-container .code button:active {
+  opacity: 0.9;
 }
