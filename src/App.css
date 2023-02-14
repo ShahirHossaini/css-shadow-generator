@@ -227,7 +227,7 @@ body {
   justify-content: center;
 }
 
-.range-input .value p {
+.range-input .value input {
   color: var(--black);
 
   background: var(--primary-color);
@@ -238,6 +238,9 @@ body {
   border-radius: 20px;
 
   text-align: center;
+
+  border: none;
+  outline: none;
 }
 
 .main-frame-output {
