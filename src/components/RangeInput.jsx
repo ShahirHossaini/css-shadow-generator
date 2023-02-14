@@ -13,6 +13,7 @@ const RangeInput = ({ label, name, min, max, value, onChange, steps }) => {
           max={max}
           onChange={(e) => onChange(e)}
           step={steps || 1}
+          value={value[name]}
         />
       </div>
       <div className="value">
