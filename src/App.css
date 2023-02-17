@@ -84,8 +84,8 @@ body {
   color: var(--white);
 }
 
-.profile-name-username p:last-child {
-  opacity: 0.5;
+.profile-name-username a:last-child {
+  color: var(--primary-color);
 }
 
 .main-body {
@@ -343,7 +343,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"] + label {
-  width: 80px;
+  width: 70px;
   height: 30px;
 
   background: var(--primary-color);
@@ -393,5 +393,5 @@ input[type="checkbox"] + label::before {
 }
 
 input[type="checkbox"]:checked + label::before {
-  transform: translate(47px);
+  transform: translate(37px);
 }

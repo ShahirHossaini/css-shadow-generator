@@ -31,8 +31,8 @@ class Body extends Component {
 
     return (
       <div className="main-body">
-        <Controls onChange={this.handleCssProps} code={state} />
         <Output code={state} />
+        <Controls onChange={this.handleCssProps} code={state} />
       </div>
     );
   }

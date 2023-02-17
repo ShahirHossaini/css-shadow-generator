@@ -15,7 +15,13 @@ const Header = () => {
           </div>
           <div className="profile-name-username">
             <p>Shahir Hussaini</p>
-            <p>@shahirdev</p>
+            <a
+              href="https://www.instagram.com/shahirdev/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              @shahirdev
+            </a>
           </div>
         </div>
       </aside>
