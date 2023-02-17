@@ -17,7 +17,7 @@ class Body extends Component {
     const { name, value } = target;
     const { state } = this;
 
-    if (target.type == "checkbox") {
+    if (target.type === "checkbox") {
       state[name] = target.checked ? "inset" : "";
     } else {
       state[name] = value;
