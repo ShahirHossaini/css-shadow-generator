@@ -45,4 +45,8 @@
   .main-frame-output {
     height: 500px;
   }
+
+  input[type="checkbox"] + label p {
+    font-size: 10px;
+  }
 }
