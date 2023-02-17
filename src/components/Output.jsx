@@ -20,12 +20,13 @@ const Output = (props) => {
   };
 
   const getCode = () => {
-    const { HOffSet, VOffSet, Blur, Spread, Color, Opacity } = props.code;
+    const { HOffSet, VOffSet, Blur, Spread, Color, Opacity, Inset } =
+      props.code;
 
     return `${HOffSet}px ${VOffSet}px ${Blur}px ${Spread}px ${hexToRgba(
       Color,
       Opacity
-    )} `;
+    )} ${Inset}`;
   };
 
   return (

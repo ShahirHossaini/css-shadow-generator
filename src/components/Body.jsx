@@ -4,20 +4,24 @@ import Output from "./Output";
 
 class Body extends Component {
   state = {
-    HOffSet: 10,
-    VOffSet: 20,
+    HOffSet: 5,
+    VOffSet: 5,
     Blur: 10,
-    Spread: 10,
-    Opacity: 1,
+    Spread: 0,
+    Opacity: 0.4,
     Color: "#000000",
-    Inset: false,
+    Inset: "",
   };
 
   handleCssProps = ({ target }) => {
     const { name, value } = target;
     const { state } = this;
 
-    state[name] = value;
+    if (target.type == "checkbox") {
+      state[name] = target.checked ? "inset" : "";
+    } else {
+      state[name] = value;
+    }
 
     this.setState({ state });
   };

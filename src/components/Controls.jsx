@@ -1,6 +1,7 @@
 import React from "react";
 import ColorInput from "./ColorInput";
 import RangeInput from "./RangeInput";
+import ToggleInput from "./toggleInput";
 
 const Controls = ({ code, onChange }) => {
   return (
@@ -54,6 +55,12 @@ const Controls = ({ code, onChange }) => {
             max={1}
             min={0}
             steps={0.01}
+          />
+          <ToggleInput
+            label={"Inset"}
+            name={"Inset"}
+            value={code}
+            onChange={onChange}
           />
         </div>
       </div>

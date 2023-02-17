@@ -45,9 +45,4 @@
   .main-frame-output {
     height: 500px;
   }
-
-  .color-input .label,
-  .range-input .label {
-    min-width: 100px;
-  }
 }

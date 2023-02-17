@@ -119,14 +119,19 @@ body {
   width: 100%;
 
   background: #282c312f;
+
+  user-select: none;
 }
 
 .main-frame-title p {
   color: var(--white);
 
   padding: 15px 20px;
+
+  font-weight: bold;
 }
 
+.checkbox-input,
 .color-input,
 .range-input {
   height: 60px;
@@ -135,6 +140,7 @@ body {
   display: flex;
 }
 
+.checkbox-input .label,
 .color-input .label,
 .range-input .label {
   height: 100%;
@@ -150,6 +156,7 @@ body {
   min-width: 120px;
 }
 
+.checkbox-input .checkbox,
 .color-input .color,
 .range-input .range {
   height: 100%;
@@ -314,9 +321,9 @@ body {
   margin: 15px;
   padding: 5px 20px;
 
-  font-size: 14px;
+  font-size: 12px;
 
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
   outline: none;
 
@@ -325,4 +332,66 @@ body {
 
 .code-container .code button:active {
   opacity: 0.9;
+}
+
+.checkbox-input .checkbox {
+  justify-content: flex-start;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  width: 80px;
+  height: 30px;
+
+  background: var(--primary-color);
+
+  border-radius: 15px;
+
+  cursor: pointer;
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+input[type="checkbox"] + label p {
+  font-size: 11px;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px;
+
+  color: var(--black);
+
+  user-select: none;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+
+  height: 26px;
+  width: 26px;
+
+  background: var(--black);
+
+  position: absolute;
+
+  border-radius: 50%;
+
+  margin: 2px 3px;
+
+  transition: 0.3s ease-in-out;
+}
+
+input[type="checkbox"]:checked + label::before {
+  transform: translate(47px);
 }
