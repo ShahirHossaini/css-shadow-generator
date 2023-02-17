@@ -49,6 +49,10 @@
     flex-flow: column-reverse;
   }
 
+  .main-frame-controls {
+    padding-bottom: 20px;
+  }
+
   input[type="checkbox"] + label p {
     font-size: 10px;
   }
