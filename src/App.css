@@ -88,7 +88,7 @@ body {
 }
 
 .main-body {
-  height: calc(100% - 180px);
+  height: calc(100% - 160px);
   width: 100%;
 
   display: flex;
@@ -107,7 +107,7 @@ body {
   background: #0d1117;
 
   width: 700px;
-  height: 500px;
+  height: 530px;
 
   border-radius: 10px;
 
@@ -397,7 +397,7 @@ input[type="checkbox"]:checked + label::before {
 
 .main-footer {
   display: flex;
-  align-items: center;
+
   justify-content: center;
 
   height: 40px;
