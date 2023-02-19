@@ -4,7 +4,11 @@
   }
 
   .main-header {
-    height: 100px;
+    height: 60px;
+  }
+
+  .main-header > aside {
+    padding: 15px;
   }
 
   .title h1 {
@@ -12,9 +16,7 @@
 
     padding: 10px;
 
-    text-align: center;
-
-    border-radius: 15px;
+    border-radius: 20px;
   }
 
   .profile-name-username {
@@ -23,6 +25,11 @@
 
   .profile-container {
     flex-direction: row-reverse;
+  }
+
+  .profile-photo {
+    height: 40px;
+    width: 40px;
   }
 
   .main-body {
@@ -55,5 +62,16 @@
 
   input[type="checkbox"] + label p {
     font-size: 10px;
+  }
+
+  .code-container .code {
+    height: 200px;
+    width: 90%;
+  }
+
+  .code-container .code button {
+    font-size: 14px;
+
+    font-weight: bold;
   }
 }

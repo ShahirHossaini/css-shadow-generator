@@ -51,13 +51,12 @@ body {
   width: 240px;
 
   display: flex;
+  align-items: center;
 }
 
 .profile-photo {
   height: 60px;
   width: 60px;
-
-  background: green;
 
   border-radius: 50%;
 
@@ -294,7 +293,7 @@ body {
 }
 
 .code-container .code textarea {
-  height: 150px;
+  height: 100%;
   width: 100%;
 
   outline: none;
