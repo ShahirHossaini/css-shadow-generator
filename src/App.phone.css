@@ -1,6 +1,8 @@
 @media (max-width: 480px) {
   .main-container {
     min-width: 100px;
+
+    height: auto;
   }
 
   .main-header {
@@ -75,5 +77,11 @@
     font-size: 14px;
 
     font-weight: bold;
+  }
+
+  .main-footer {
+    font-size: 18px;
+
+    height: 60px;
   }
 }

@@ -88,7 +88,7 @@ body {
 }
 
 .main-body {
-  height: calc(100% - 120px);
+  height: calc(100% - 180px);
   width: 100%;
 
   display: flex;
@@ -107,7 +107,7 @@ body {
   background: #0d1117;
 
   width: 700px;
-  height: 550px;
+  height: 500px;
 
   border-radius: 10px;
 
@@ -275,7 +275,7 @@ body {
 }
 
 .code-container {
-  height: 240px;
+  height: 210px;
 
   display: grid;
   place-items: center;
@@ -393,4 +393,22 @@ input[type="checkbox"] + label::before {
 
 input[type="checkbox"]:checked + label::before {
   transform: translate(37px);
+}
+
+.main-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 40px;
+
+  color: white;
+}
+
+.main-footer a {
+  color: var(--primary-color);
+
+  text-decoration: none;
+
+  text-transform: capitalize;
 }
